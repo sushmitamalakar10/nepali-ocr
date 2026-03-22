@@ -45,7 +45,7 @@ if uploaded_file:
     
         if st.session_state.extracted_text:
             st.image(st.session_state.processed_image, caption="Processed")
-            st.text_area("Nepali Text", st.session_state.extracted_text, height=300)
+            st.text_area("Nepali Text", st.session_state.extracted_text, height=800, width=800)
             st.download_button("Download TXT", st.session_state.extracted_text)
 
 st.caption("By Sushmita Malakar")
