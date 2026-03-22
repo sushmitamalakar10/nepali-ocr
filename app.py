@@ -3,10 +3,14 @@ import cv2
 import numpy as np
 import pytesseract
 from PIL import Image
+import os
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-# os.environ['TESSDATA_PREFIX'] = '/usr/share/tesseract-ocr/4/tessdata'
-# pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
+
+os.environ['TESSDATA_PREFIX'] = '/usr/share/tesseract-ocr/4/tessdata'
+pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
+
+# pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
 
 st.set_page_config(layout="wide", page_title="Nepali OCR")
 
