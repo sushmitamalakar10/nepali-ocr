@@ -3,7 +3,6 @@ import cv2
 import numpy as np
 import pytesseract
 from PIL import Image
-from streamlit_cropper import st_cropper
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
